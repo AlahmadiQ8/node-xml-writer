@@ -35,7 +35,7 @@ exports['t05'] = function (test) {
 	this.xw.endElement();
 	this.xw.endElement();
 	this.xw.endDocument();
-	test.equal(this.xw.toString(), '<?xml version="1.0"?>\n<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cd="http://www.recshop.fake/cd#"><rdf:Description rdf:about="http://www.recshop.fake/cd/Empire Burlesque"><cd:artist>Bob Dylan</cd:artist><cd:country>USA</cd:country><cd:company>Columbia</cd:company><cd:price>10.90</cd:price><cd:year>1985</cd:year></rdf:Description></rdf:RDF>');
+	test.equal(this.xw.toString(), '<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cd="http://www.recshop.fake/cd#"><rdf:Description rdf:about="http://www.recshop.fake/cd/Empire Burlesque"><cd:artist>Bob Dylan</cd:artist><cd:country>USA</cd:country><cd:company>Columbia</cd:company><cd:price>10.90</cd:price><cd:year>1985</cd:year></rdf:Description></rdf:RDF>');
 	test.done();
 };
 // With NS functions
@@ -72,6 +72,6 @@ exports['t09'] = function (test) {
 	this.xw.endElement();
 	this.xw.endElement();
 	this.xw.endDocument();
-	test.equal(this.xw.toString(), '<?xml version="1.0"?>\n<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cd="http://www.recshop.fake/cd#"><rdf:Description rdf:about="http://www.recshop.fake/cd/Empire Burlesque"><cd:artist>Bob Dylan</cd:artist><cd:country>USA</cd:country><cd:company>Columbia</cd:company><cd:price>10.90</cd:price><cd:year>1985</cd:year></rdf:Description></rdf:RDF>');
+	test.equal(this.xw.toString(), '<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cd="http://www.recshop.fake/cd#"><rdf:Description rdf:about="http://www.recshop.fake/cd/Empire Burlesque"><cd:artist>Bob Dylan</cd:artist><cd:country>USA</cd:country><cd:company>Columbia</cd:company><cd:price>10.90</cd:price><cd:year>1985</cd:year></rdf:Description></rdf:RDF>');
 	test.done();
 };

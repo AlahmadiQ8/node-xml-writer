@@ -10,7 +10,7 @@ exports['t01'] = function (test) {
   this.xw.endElement();
   this.xw.endDocument();
 
-  test.equal(this.xw.toString(), '<?xml version="1.0" encoding="UTF-8"?>\n<foo><one>1</one><two>2</two></foo>');
+  test.equal(this.xw.toString(), '<foo><one>1</one><two>2</two></foo>');
   test.done();
 };
 
@@ -28,7 +28,7 @@ exports['t02'] = function (test) {
   this.xw.endElement();
   this.xw.endDocument();
 
-  test.equal(this.xw.toString(), '<?xml version="1.0" encoding="UTF-8"?>\n<foo><one>1</one><two>2</two></foo>');
+  test.equal(this.xw.toString(), '<foo><one>1</one><two>2</two></foo>');
   test.done();
 };
 
@@ -49,6 +49,6 @@ exports['t03'] = function (test) {
   this.xw.endElement();
   this.xw.endDocument();
 
-  test.equal(this.xw.toString(), '<?xml version="1.0" encoding="UTF-8"?>\n<foo><one>1</one><two>2</two></foo>');
+  test.equal(this.xw.toString(), '<foo><one>1</one><two>2</two></foo>');
   test.done();
 };

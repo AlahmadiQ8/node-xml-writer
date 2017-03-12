@@ -29,7 +29,8 @@
   "homepage": "http://github.com/touv/node-xml-writer",
   "scripts": {
     "truc": "nodeunit test/",
-    "test": "./node_modules/.bin/istanbul test ./node_modules/.bin/nodeunit test/"
+    "test": "./node_modules/.bin/istanbul test ./node_modules/.bin/nodeunit test/",
+    "run-test": "nodeunit"
   },
   "main": "./index.js",
   "repository": {
